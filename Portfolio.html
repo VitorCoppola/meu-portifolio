@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitor Coppola - Game Producer Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background: #131313;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+    }
+    nav {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #444;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #007BFF;
+    }
+    /* Container para seleção de idioma com bandeira */
+    #language-container {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 20px;
+    }
+    #language-container img {
+      width: 24px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    nav select {
+      padding: 5px;
+      font-size: 1rem;
+      vertical-align: middle;
+    }
+    section {
+      padding: 2rem;
+    }
+    .content {
+      max-width: 900px;
+      margin: auto;
+    }
+    /* Atualização dos títulos para linhas divisórias mais longas */
+    h2 {
+      color: #444;
+      text-align: center;
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 80%;
+      margin: 0.5rem auto 0;
+      border-bottom: 2px solid #0c0c0c;
+    }
+    .contact a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    /* Estilos para as galerias de jogos */
+    .game-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .game {
+      width: 300px;
+      text-align: center;
+    }
+    .game img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .game h3 {
+      margin: 1rem 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Vitor Coppola</h1>
+    <p>Game Producer &amp; Developer</p>
+  </header>
+
+  <!-- Navegação com seleção de idioma e bandeira -->
+  <nav>
+    <a href="#about" class="lang-pt">Sobre Mim</a>
+    <a href="#experience" class="lang-pt">Experiência</a>
+    <a href="#skills" class="lang-pt">Habilidades</a>
+    <a href="#projects" class="lang-pt">Projetos</a>
+    <a href="#short-n-sweet" class="lang-pt">Short N Sweet</a>
+    <a href="#contact" class="lang-pt">Contato</a>
+
+    <a href="#about" class="lang-en" style="display: none;">About Me</a>
+    <a href="#experience" class="lang-en" style="display: none;">Experience</a>
+    <a href="#skills" class="lang-en" style="display: none;">Skills</a>
+    <a href="#projects" class="lang-en" style="display: none;">Projects</a>
+    <a href="#short-n-sweet" class="lang-en" style="display: none;">Short N Sweet</a>
+    <a href="#contact" class="lang-en" style="display: none;">Contact</a>
+
+    <div id="language-container">
+      <img id="flag-icon" src="flag-pt.png" alt="Flag">
+      <select id="language-select">
+        <option value="pt">Português</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+  </nav>
+
+  <!-- Seção: Sobre Mim -->
+  <section id="about">
+    <div class="content">
+      <div class="lang-pt">
+        <h2>Sobre Mim</h2>
+        <p>Sou um Game Producer apaixonado por inovação e tecnologia, com sólida experiência na criação e lançamento de jogos. Ao longo da minha trajetória, atuei tanto em grandes estúdios quanto em projetos indie, liderando equipes multidisciplinares de programação, design, animação e 3D. Com uma abordagem colaborativa e estratégica, transformo ideias em experiências interativas marcantes, sempre com foco na excelência e na entrega de produtos de alta qualidade – em destaque, Cobra Kai 2 Dojo Rising, The Walking Dead: Destinies e Mirrored Souls. Estou constantemente em busca de novas tendências e métodos que elevem o padrão dos games, sempre visando surpreender e engajar o público.</p>
+      </div>
+      <div class="lang-en" style="display: none;">
+        <h2>About Me</h2>
+        <p>I am a Game Producer passionate about innovation and technology, with solid experience in creating and launching games. Throughout my career, I have worked in both large studios and indie projects, leading multidisciplinary teams in programming, design, animation, and 3D. With a collaborative and strategic approach, I transform ideas into impactful interactive experiences, always focusing on excellence and delivering high-quality products – including Cobra Kai 2 Dojo Rising, The Walking Dead: Destinies, and Mirrored Souls. I am constantly seeking new trends and methods to elevate the standard of games, always aiming to surprise and engage the audience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção: Experiência -->
+  <section id="experience">
+    <div class="content">
+      <div class="lang-pt">
+        <h2>Experiência</h2>
+        <p><strong>Afil Games (Brasil) - Game Producer</strong></p>
+        <ul>
+          <li>Criação da documentação estrutural do processo de desenvolvimento da empresa;</li>
+          <li>Aplicação de metodologias ágeis no processo do estúdio;</li>
+          <li>Criação de iniciativas estratégicas para otimizar processos de desenvolvimento focado em jogos curtos.</li>
+        </ul>
+        <p><strong>Flux Games (Brasil) - Game Producer</strong></p>
+        <ul>
+          <li>Coordenação de equipes de programação, design, animação e 3D para <em>Cobra Kai 2 Dojo Rising</em> e <em>The Walking Dead: Destinies</em>;</li>
+          <li>Responsável pela certificação dos jogos para múltiplas plataformas;</li>
+          <li>Coordenação de equipe multidisciplinar com mais de 18 pessoas;</li>
+          <li>Criação de iniciativas estratégicas para otimizar processos de desenvolvimento.</li>
+        </ul>
+        <p><strong>Short N Sweet Project - Game Producer / Product Manager</strong></p>
+        <ul>
+          <li>Colaboração com times indie para lançar <em>Mirrored Souls</em>, <em>Holyhunt</em>, <em>UDO</em> e <em>Foodboy</em>;</li>
+          <li>Experiência no lançamento e desenvolvimento de jogos;</li>
+          <li>Planejamento dos cronogramas das milestones dos jogos;</li>
+          <li>Aprovação de todas as milestones de entrega;</li>
+          <li>Aplicação de certificações para todas as plataformas (Nintendo Lotecheck, PlayStation TRCs, Xbox Requirements e Steam).</li>
+        </ul>
+      </div>
+      <div class="lang-en" style="display: none;">
+        <h2>Experience</h2>
+        <p><strong>Afil Games (Brazil) - Game Producer</strong></p>
+        <ul>
+          <li>Created structural documentation for the company's development process;</li>
+          <li>Implemented agile methodologies in the studio's process;</li>
+          <li>Developed strategic initiatives to optimize development processes focused on short games.</li>
+        </ul>
+        <p><strong>Flux Games (Brazil) - Game Producer</strong></p>
+        <ul>
+          <li>Coordinated programming, design, animation, and 3D teams for <em>Cobra Kai 2 Dojo Rising</em> and <em>The Walking Dead: Destinies</em>;</li>
+          <li>Responsible for certifying games for multiple platforms;</li>
+          <li>Managed a multidisciplinary team of over 18 people;</li>
+          <li>Implemented strategic initiatives to optimize development processes.</li>
+        </ul>
+        <p><strong>Short N Sweet Project - Game Producer / Product Manager</strong></p>
+        <ul>
+          <li>Collaborated with indie teams to launch <em>Mirrored Souls</em>, <em>Holyhunt</em>, <em>UDO</em>, and <em>Foodboy</em>;</li>
+          <li>Experienced in launching and developing games;</li>
+          <li>Planned game milestone schedules;</li>
+          <li>Approved all delivery milestones;</li>
+          <li>Applied certifications for all platforms (Nintendo Lotecheck, PlayStation TRCs, Xbox Requirements, and Steam).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção: Habilidades -->
+  <section id="skills">
+    <div class="content">
+      <div class="lang-pt">
+        <h2>Habilidades</h2>
+        <ul>
+          <li>Gestão de Projetos e Produção de Jogos;</li>
+          <li>Conhecimentos em linguagens de programação como C#, C++, HTML e Java;</li>
+          <li>Experiência com engines como Unity, Unreal e Godot;</li>
+          <li>Formação em Game Design;</li>
+          <li>Certificação como Scrum Master &amp; Product Owner e metodologias ágeis;</li>
+          <li>Planejamento Estratégico;</li>
+          <li>Certificação de Jogos Multi-plataforma;</li>
+          <li>Colaboração em Equipe e Comunicação.</li>
+        </ul>
+      </div>
+      <div class="lang-en" style="display: none;">
+        <h2>Skills</h2>
+        <ul>
+          <li>Project Management and Game Production;</li>
+          <li>Proficient in programming languages such as C#, C++, HTML, and Java;</li>
+          <li>Experience with engines like Unity, Unreal, and Godot;</li>
+          <li>Background in Game Design;</li>
+          <li>Certified Scrum Master &amp; Product Owner with agile methodologies;</li>
+          <li>Strategic Planning;</li>
+          <li>Multi-platform Game Certification;</li>
+          <li>Team Collaboration and Communication.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção: Projetos -->
+  <section id="projects">
+    <div class="content">
+      <div class="lang-pt">
+        <h2>Projetos</h2>
+        <p>Abaixo alguns dos projetos AA em que atuei como produtor:</p>
+        <div class="game-gallery">
+          <!-- Cobra Kai 2: Dojos Rising -->
+          <div class="game">
+            <img src="Capturar.PNG" alt="Cobra Kai 2: Dojos Rising">
+            <h3>Cobra Kai 2: Dojos Rising</h3>
+            <p>Cobra Kai 2: Dojo Rising é um jogo de ação inspirado na icônica série, onde intensas lutas de artes marciais se combinam a desafios estratégicos em ambientes de dojo.</p>
+            <p>No projeto, atuei como produtor na parte de Game Design, Localização e Animação, aplicando metodologias ágeis para facilitar o desenvolvimento.</p>
+          </div>
+          <!-- The Walking Dead: Destinies -->
+          <div class="game">
+            <img src="TWD.png" alt="The Walking Dead: Destinies">
+            <h3>The Walking Dead: Destinies</h3>
+            <p>The Walking Dead: Destinies é um jogo narrativo baseado na famosa série, onde as decisões dos jogadores influenciam o destino dos protagonistas, explorando cenários emocionantes e interativos.</p>
+            <p>No projeto, liderei equipes multidisciplinares (programação, game design, animação, etc.) e auxiliei na redação de documentação em inglês, aplicando metodologias ágeis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lang-en" style="display: none;">
+        <h2>Projects</h2>
+        <p>Below are some of the projects AA where I worked as a producer:</p>
+        <div class="game-gallery">
+          <!-- Cobra Kai 2: Dojos Rising -->
+          <div class="game">
+            <img src="Capturar.PNG" alt="Cobra Kai 2: Dojos Rising">
+            <h3>Cobra Kai 2: Dojos Rising</h3>
+            <p>Cobra Kai 2: Dojos Rising is an action game inspired by the iconic series, where intense martial arts fights merge with strategic challenges in dojo settings.</p>
+            <p>In this project, I worked as a producer for Game Design, Localization, and Animation, applying agile methodologies to streamline development.</p>
+          </div>
+          <!-- The Walking Dead: Destinies -->
+          <div class="game">
+            <img src="TWD.png" alt="The Walking Dead: Destinies">
+            <h3>The Walking Dead: Destinies</h3>
+            <p>The Walking Dead: Destinies is a narrative-driven game based on the famous series, where players’ decisions influence the fate of the protagonists while exploring exciting and interactive scenarios.</p>
+            <p>I led multidisciplinary teams (programming, game design, animation, etc.) and assisted in writing documentation in English, implementing agile methodologies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção: Short N Sweet -->
+  <section id="short-n-sweet">
+    <div class="content">
+      <div class="lang-pt">
+        <h2>Short N Sweet</h2>
+        <p>Projeto de lançamento de jogos indie em colaboração com times brasileiros, todos certificados para todas as plataformas. Abaixo os jogos do projeto:</p>
+        <div class="game-gallery">
+          <!-- Mirrored Souls -->
+          <div class="game">
+            <img src="Mirrored-Souls.jpg" alt="Mirrored Souls">
+            <h3>Mirrored Souls</h3>
+            <p>Jogo com foco em narrativa e puzzle, onde o player controla os dois personagens principais simultaneamente para superar desafios.</p>
+          </div>
+          <!-- UDO -->
+          <div class="game">
+            <img src="UDO.png" alt="UDO">
+            <h3>UDO</h3>
+            <p>Jogo arcade down-scroller roguelike, com gameplay desafiadora e divertida.</p>
+          </div>
+          <!-- HolyHunt -->
+          <div class="game">
+            <img src="HolyHunt.png" alt="HolyHunt">
+            <h3>HolyHunt</h3>
+            <p>Jogo de tiro roguelike que une a estética nostálgica dos 8 bits com mecânicas modernas e complexas.</p>
+          </div>
+          <!-- Foodboy -->
+          <div class="game">
+            <img src="Foodboy.png" alt="Foodboy">
+            <h3>Food Boy</h3>
+            <p>Inspirado no clássico Paperboy, Food Boy desafia os jogadores a entregar pizzas em ambientes urbanos em um emocionante formato arcade.</p>
+          </div>
+        </div>
+      </div>
+      <div class="lang-en" style="display: none;">
+        <h2>Short N Sweet</h2>
+        <p>An indie game launch project in collaboration with Brazilian teams, with all games certified for every platform. Below are the games from the project:</p>
+        <div class="game-gallery">
+          <!-- Mirrored Souls -->
+          <div class="game">
+            <img src="Mirrored-Souls.jpg" alt="Mirrored Souls">
+            <h3>Mirrored Souls</h3>
+            <p>A game focused on narrative and puzzles, where the player controls both main characters simultaneously to overcome challenges.</p>
+          </div>
+          <!-- UDO -->
+          <div class="game">
+            <img src="UDO.png" alt="UDO">
+            <h3>UDO</h3>
+            <p>An arcade down-scroller roguelike game offering challenging and fun gameplay.</p>
+          </div>
+          <!-- HolyHunt -->
+          <div class="game">
+            <img src="HolyHunt.png" alt="HolyHunt">
+            <h3>HolyHunt</h3>
+            <p>A roguelike shooter that combines the nostalgic aesthetics of 8-bit graphics with modern, complex shooting mechanics.</p>
+          </div>
+          <!-- Foodboy -->
+          <div class="game">
+            <img src="Foodboy.png" alt="Foodboy">
+            <h3>Food Boy</h3>
+            <p>Inspired by the classic Paperboy, Food Boy challenges players to deliver pizzas in urban environments in an exciting arcade format.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção: Contato -->
+  <section id="contact">
+    <div class="content contact">
+      <div class="lang-pt">
+        <h2>Contato</h2>
+        <p>Telefone: +55 (11) 95337-9944</p>
+        <p>E-mail: <a href="mailto:vitor_coppola@hotmail.com">vitor_coppola@hotmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/vitor-coppola" target="_blank">vitor-coppola</a></p>
+      </div>
+      <div class="lang-en" style="display: none;">
+        <h2>Contact</h2>
+        <p>Phone: +55 (11) 95337-9944</p>
+        <p>Email: <a href="mailto:vitor_coppola@hotmail.com">vitor_coppola@hotmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/vitor-coppola" target="_blank">vitor-coppola</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script para trocar o idioma, atualizar a bandeira e manter os estilos adequados -->
+  <script>
+    document.getElementById("language-select").addEventListener("change", function() {
+      var lang = this.value;
+      var ptElements = document.querySelectorAll(".lang-pt");
+      var enElements = document.querySelectorAll(".lang-en");
+      var flagIcon = document.getElementById("flag-icon");
+      
+      if(lang === "pt") {
+        ptElements.forEach(function(el) {
+          // Se o elemento for um link (<a>), usar inline-block; senão, block.
+          el.style.display = (el.tagName.toLowerCase() === "a") ? "inline-block" : "block";
+        });
+        enElements.forEach(function(el) {
+          el.style.display = "none";
+        });
+        flagIcon.src = "flag-pt.png";
+      } else {
+        ptElements.forEach(function(el) {
+          el.style.display = "none";
+        });
+        enElements.forEach(function(el) {
+          el.style.display = (el.tagName.toLowerCase() === "a") ? "inline-block" : "block";
+        });
+        flagIcon.src = "flag-en.png";
+      }
+    });
+  </script>
+</body>
+</html>
